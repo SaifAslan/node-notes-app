@@ -7,6 +7,8 @@ const getNotes = function () {
 const addNotes = (title, body) => {
   const notes = loadNotes();
   const dublicateNote = notes.find((note) => note.title === title);
+// write debugger in the file
+// write inspect in terminal and head to chrome://inspect at chrome
   if (!dublicateNote) {
     const note = { title, body };
     notes.push(note);
